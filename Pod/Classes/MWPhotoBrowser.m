@@ -1014,7 +1014,7 @@ static void * MWVideoPlayerObservation = &MWVideoPlayerObservation;
     _likesButton.selected = likedByMe;
     
     //Update likes container
-    NSUInteger *likes = [_fullscreenPhotoDelegate likesCount:_currentPageIndex];
+    NSUInteger likes = [_fullscreenPhotoDelegate likesCount:_currentPageIndex];
     if (likes > 0) {
         NSString *likesWord = likes == 1 ? @"like" : @"likes";
         _likesLabel.text = [NSString stringWithFormat:@"%d %@", likes, likesWord];
